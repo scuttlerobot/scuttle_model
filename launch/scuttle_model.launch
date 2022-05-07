@@ -1,0 +1,17 @@
+<launch>
+    <!--
+        Use this launch file to launch all the nodes you need for your additional SCUTTLE parts to
+        function.
+
+        A number of parameters are available that help you figure out what the environment looks like.
+    -->
+
+    <!--
+        Indicates if ROS is running on a physical SCUTTLE (value = true) or a virtual one
+        (value = false), e.g. when running in Gazebo.
+    -->
+    <arg name="is_physical" default="true"/>
+
+
+
+</launch>
