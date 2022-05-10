@@ -1,6 +1,7 @@
 # scuttle_model
 
-Provides a user customizable wrapper for `scuttle_desciption`.
+Provides a user customizable wrapper for `scuttle_desciption` that allows you to add your own
+components to SCUTTLE.
 
 ## Dependencies
 
@@ -14,10 +15,14 @@ SCUTTLE using Raspberry Pi OS.
 1. The [scuttle_description](https://github.com/scuttlerobot/scuttle_description) package installed
    in your workspace.
 
-
 ## Usage
 
-- Clone this repo and add your own components to the URDF file
-- There shouldn't be many changes to this repository so you won't have to worry about merge conflicts
+To use the `scuttle_model` package you need to take the following steps
 
-## Configurations
+1. Clone this repo into the `src` directory of your ROS workspace
+1. Create a new URDF file in the `urdf` directory. Add your own components to this new URDF file.
+1. Add a link to your URDF file in the `urdf/scuttle.xacro` file.
+1. Build your workspace using `catkin_make`
+
+Once you have taken these steps you can run your model in Gazebo, for instance using one of the
+worlds defined in the [scuttle_gazebo](https://github.com/scuttlerobot/scuttle_gazebo) repository.
